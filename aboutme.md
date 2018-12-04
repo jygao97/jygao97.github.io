@@ -5,7 +5,7 @@ subtitle: CS Master Candidate @ PKU
 ---
 
 * I’m a first-year Master candidate at [the School of Electronics Engineering and Computer Science](http://eecs.pku.edu.cn/) in [Peking University](www.pku.edu.cn), supervised by Prof. Yasha Wang.
-* My research focuses on **Recommender Systems** and other **Machine Learning/Dating Mining Applications**.
+* My research focuses on **Recommender Systems** and other **Machine Learning/ Dating Mining Applications**.
 
 ### My history
 * I received the B.E. degree in 2018 at [the School of Electronics Engineering and Computer Science](http://eecs.pku.edu.cn/) in [Peking University](https://www.pku.edu.cn/).
