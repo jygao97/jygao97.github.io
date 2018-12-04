@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: CS Master @ PKU
+subtitle: CS Master Candidate @ PKU
 ---
 
 * I’m a first-year Master candidate at [the School of Electronics Engineering and Computer Science](http://eecs.pku.edu.cn/) in [Peking University](www.pku.edu.cn), supervised by Prof. Yasha Wang.
