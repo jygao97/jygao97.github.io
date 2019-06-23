@@ -1,3 +1,4 @@
+---
 layout: post
 title:  Our Paper Accepted by IJCAI 2019
 categories: news
