@@ -19,6 +19,8 @@ title: Publications
 - **MuLDA: A Multi-Task Semi-Supervised Learning Framework for Drug-Drug Interaction Prediction**<br>
   Xu Chu, Yang Lin, Yasha Wang, Leye Wang, Jiangtao Wang, **Jingyue Gao**. <br>
   *The 28th International Joint Conference on Artificial Intelligence, Macao, China*. **IJCAI 2019**
+  <br>
+
 ## 2018
 - **CAPED: Context-Aware Powerlet-Based Energy Disaggregation**  
   **Jingyue Gao**, Yasha Wang, Xu Chu, Yuanduo He, Ziqing Mao. <br>
