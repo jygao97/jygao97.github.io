@@ -4,6 +4,7 @@ title: Awards
 ---
 
 - **2018 Peking University Award for Excellent Graduate**
+- **2018 Outstanding Undergraduate Thesis Award in PKU EECS**
 - **MSRA Award of Excellence**
 - **2018 PAKDD Student Travel Award**
 - **2017 Huawei Scholarship**
