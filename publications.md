@@ -10,11 +10,12 @@ title: Publications
 - **STAR: Spatio-Temporal Taxonomy-Aware Tag Recommendation for Citizen Complaints**<br>
   **Jingyue Gao\***, Yuanduo He\*, Yasha Wang, Xiting Wang, Jiangtao Wang, Guangju Peng, Xu Chu.<br>
   *The 28th ACM International Conference on Information and Knowledge Management, Beijing, China*. **CIKM 2019**<br>
-  (\* denotes equal contribution)<br>
+  [[PDF]](https://jygao97.github.io/papers/STAR_CIKM19_CameraReady.pdf)[[CODE]](https://github.com/jygao97/STAR) (\* denotes equal contribution)<br>
   <br>
 - **CAMP: Co-Attention Memory Networks for Diagnosis Prediction in Healthcare**<br>
   **Jingyue Gao**, Xiting Wang, Yasha Wang, Zhao Yang, Junyi Gao, Jiangtao Wang, Wen Tang, Xing Xie.<br>
-  *The 19th IEEE International Conference on Data Mining, Beijing, China*. **ICDM 2019**<br>
+  *The 19th IEEE International Conference on Data Mining, Beijing, China*. **ICDM 2019** 
+  [[PDF]](https://jygao97.github.io/papers/CAMP_ICDM19__short_version.pdf)[[CODE]](https://github.com/jygao97/CAMP)<br>
   <br>
 - **MuLDA: A Multi-Task Semi-Supervised Learning Framework for Drug-Drug Interaction Prediction**<br>
   Xu Chu, Yang Lin, Yasha Wang, Leye Wang, Jiangtao Wang, **Jingyue Gao**. <br>
