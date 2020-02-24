@@ -2,7 +2,9 @@
 layout: page
 title: Awards
 ---
-
+- **2019 ICDM Student Travel Award**
+- **2018-2019 Peking University Leo KoGuan Scholarship**
+- **2018-2019 Peking University Merit Student**
 - **2018 Peking University Award for Excellent Graduate**
 - **2018 Outstanding Undergraduate Thesis Award in PKU EECS**
 - **MSRA Award of Excellence**
