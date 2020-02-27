@@ -10,7 +10,7 @@ subtitle: CS Master Candidate @ PKU
 
 ### Professional Experience
 * **2019/06 - 2019/09**<br>
-  I was a software engineering intern at Google (Mountain View Campus) supervised by [Bill Schilit](https://ai.google/research/people/author27501) and [Miguel Flores](https://www.linkedin.com/in/miguelfrde/). During this internship, I work on building the intelligience layer of [Fuchsia](https://en.wikipedia.org/wiki/Google_Fuchsia) (an open-sourced Operating System).
+  I was a software engineering intern at Google (Mountain View Campus) supervised by [Bill Schilit](https://ai.google/research/people/author27501) and [Miguel Flores](https://www.linkedin.com/in/miguelfrde/). During this internship, I worked on building the intelligience layer of [Fuchsia](https://en.wikipedia.org/wiki/Google_Fuchsia) (an open-sourced Operating System).
 * **2017/09 - 2018/07**<br> 
 I was a research intern at [Social Computing Group](https://www.microsoft.com/en-us/research/group/social-computing-beijing/) in [Microsoft Research Asia](https://www.msra.cn/), supervised by [Dr. Xiting Wang](https://www.microsoft.com/en-us/research/people/xitwan/) and [Dr. Xing Xie](https://www.microsoft.com/en-us/research/people/xingx/). During this internship, I worked on a project about automatic generation of advertisements and a project about [explainable recommender system](https://www.microsoft.com/en-us/research/uploads/prod/2018/10/exrec-aaai-camera-ready.pdf). 
 * **2017/04 - 2017/06**<br>
