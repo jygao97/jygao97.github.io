@@ -9,6 +9,8 @@ subtitle: CS Master Candidate @ PKU
 * My research focuses on **Recommender Systems** and other **Machine Learning/ Data Mining Applications**.
 
 ### Professional Experience
+* **2020/06 - 2020/09**<br>
+  I am a machine learning engineer intern at Alibaba, supervised by [Hongbo Deng](https://sites.google.com/view/hongbodeng/). During this internship, I focus on designing unbiased learning to rank algorithms for the recommendation task of Weitao, a popular and fast-growing platform inside Taobao app.
 * **2019/06 - 2019/09**<br>
   I was a software engineering intern at Google (Mountain View Campus) supervised by [Bill Schilit](https://ai.google/research/people/author27501) and [Miguel Flores](https://www.linkedin.com/in/miguelfrde/). During this internship, I worked on building the intelligience layer of [Fuchsia](https://en.wikipedia.org/wiki/Google_Fuchsia) (an open-sourced Operating System).
 * **2017/09 - 2018/07**<br> 
