@@ -2,6 +2,12 @@
 layout: page
 title: Publications
 ---
+## 2020
+- **Set-Sequence-Graph: A Multi-View Approach Towards Exploiting Reviews for Recommendation**<br>
+  **Jingyue Gao**, Yang	Lin, Yasha Wang, Xiting	Wang, Zhao	Yang, Yuanduo	He, Xu	Chu.<br>
+  *The 29th ACM International Conference on Information and Knowledge Management, Online*. **CIKM 2020**<br> 
+  <br>
+
 ## 2019
 - **Explainable Recommendation Through Attentive Multi-View Learning**  
   **Jingyue Gao**, Xiting Wang, Yasha Wang, Xing Xie. <br>
