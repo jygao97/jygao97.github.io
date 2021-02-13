@@ -2,6 +2,12 @@
 layout: page
 title: Publications
 ---
+## 2021
+- **U-BERT: Pre-Training User Representations for Improved Recommendation**<br>
+  Zhaopeng Qiu, Xian Wu, **Jingyue Gao**, Wei Fan.<br>
+  *The 35th AAAI Conference on Artificial Intelligence, Online*. **AAAI 2021**<br> 
+  <br>
+  
 ## 2020
 - **Set-Sequence-Graph: A Multi-View Approach Towards Exploiting Reviews for Recommendation**<br>
   **Jingyue Gao**, Yang	Lin, Yasha Wang, Xiting	Wang, Zhao	Yang, Yuanduo	He, Xu	Chu.<br>
