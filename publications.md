@@ -3,6 +3,11 @@ layout: page
 title: Publications
 ---
 ## 2021
+- **Learning Groupwise Explanations for Black-Box Models**<br>
+  **Jingyue Gao**, Xiting Wang, Yasha Wang, Yulan Yan, Xing Xie. <br>
+  *The 30th International Joint Conference on Artificial Intelligence, Online*. **IJCAI 2021**
+  <br>
+  
 - **U-BERT: Pre-Training User Representations for Improved Recommendation**<br>
   Zhaopeng Qiu, Xian Wu, **Jingyue Gao**, Wei Fan.<br>
   *The 35th AAAI Conference on Artificial Intelligence, Online*. **AAAI 2021**<br> 
