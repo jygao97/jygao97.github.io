@@ -3,7 +3,7 @@ layout: page
 title: Awards
 ---
 - **2021 Peking University Award for Excellent Graduate**
-- **2021 Outstanding Undergraduate Thesis Award in PKU EECS**
+- **2021 Outstanding Graduate Thesis Award in PKU EECS**
 - **2019-2020 Peking University Merit Student**
 - **2019 ICDM Student Travel Award**
 - **2018-2019 Peking University Leo KoGuan Scholarship**
