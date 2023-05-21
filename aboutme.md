@@ -1,14 +1,15 @@
 ---
 layout: page
 title: About me
-subtitle: CS Master Candidate @ PKU
 ---
-
-* I’m a Master candidate at [the School of Electronics Engineering and Computer Science](http://eecs.pku.edu.cn/) in [Peking University](www.pku.edu.cn) from 2018/09, supervised by [Prof. Yasha Wang](http://www.sei.pku.edu.cn/people/wangys).
+### Education
+* I received the M.S. degree from [the School of Electronics Engineering and Computer Science](http://eecs.pku.edu.cn/) in [Peking University](www.pku.edu.cn) in 2021/07, advised by [Prof. Yasha Wang](http://www.sei.pku.edu.cn/people/wangys).
 * I received the B.S. degree from [the School of Electronics Engineering and Computer Science](http://eecs.pku.edu.cn/) in [Peking University](https://www.pku.edu.cn/) in 2018/07.
 * My research focuses on **Recommender Systems** and other **Machine Learning/ Data Mining Applications**.
 
 ### Professional Experience
+* **2021/07 - Now**<br>
+  I am a machine learning engineer II at Alibaba, working on core ranking models for the advertising system in Taobao.
 * **2020/06 - 2020/09**<br>
   I am a machine learning engineer intern at Alibaba, supervised by [Hongbo Deng](https://sites.google.com/view/hongbodeng/). During this internship, I focus on designing unbiased learning to rank algorithms for the recommendation task of Weitao, a popular and fast-growing platform inside Taobao app.
 * **2019/06 - 2019/09**<br>
