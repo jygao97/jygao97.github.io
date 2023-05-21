@@ -2,6 +2,11 @@
 layout: page
 title: Publications
 ---
+## 2023
+- **Joint Optimization of Ranking and Calibration with Contextualized Hybrid Model**<br>
+  Xiang-Rong Sheng, **Jingyue Gao**, Yueyao Cheng, Siran Yang, Shuguang Han, Hongbo Deng, Yuning Jiang, Jian Xu, Bo Zheng. <br>
+  *The 29th ACM SIGKDD Conference On Knowledge Discovery and Data Mining, Long Beach, USA*. **SIGKDD 2023**
+  <br>
 ## 2021
 - **Learning Groupwise Explanations for Black-Box Models**<br>
   **Jingyue Gao**, Xiting Wang, Yasha Wang, Yulan Yan, Xing Xie. <br>
