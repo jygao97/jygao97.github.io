@@ -11,7 +11,7 @@ title: Publications
   
 - **COPR: Consistency-Oriented Pre-Ranking for Online Advertising**<br>
   **Jingyue Gao\***, Zhishan Zhao\*, Yu Zhang, Shuguang Han, Siyuan Lou, Xiang-Rong Sheng, Zhe Wang, Han Zhu, Yuning Jiang, Jian Xu, Bo Zheng  (\* denotes equal contribution).<br>
-  *Released at arXiv, 2023/06* [[PDF]](https://jygao97.github.io/papers/COPR_Arxiv.pdf)<br>
+  *Released at arXiv, 2023/06* [[PDF]](https://jygao97.github.io/papers/COPR_Arxiv.pdf)
   <br>
   
 - **Joint Optimization of Ranking and Calibration with Contextualized Hybrid Model**<br>
