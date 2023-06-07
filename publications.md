@@ -6,13 +6,13 @@ title: Publications
 ## 2023
 - **Rec4Ad: A Free Lunch to Mitigate Sample Selection Bias for Ads CTR Prediction in Taobao**<br>
   **Jingyue Gao**, Shuguang Han, Han Zhu, Siran Yang, Yuning Jiang, Jian Xu, Bo Zheng. <br>
-  *Released at arXiv, 2023/06* [[PDF]](https://jygao97.github.io/papers/Rec4Ad_Arxiv.pdf)
+  *Released at arXiv, 2023/06* [[PDF]](https://arxiv.org/abs/2306.03527)
   <br>
   
 - **COPR: Consistency-Oriented Pre-Ranking for Online Advertising**<br>
   **Jingyue Gao\***, Zhishan Zhao\*, Yu Zhang, Shuguang Han, Siyuan Lou, Xiang-Rong Sheng, Zhe Wang, Han Zhu, Yuning Jiang, Jian Xu, Bo Zheng.<br>
   (\* denotes equal contribution)<br>
-  *Released at arXiv, 2023/06* [[PDF]](https://jygao97.github.io/papers/COPR_Arxiv.pdf)
+  *Released at arXiv, 2023/06* [[PDF]](https://arxiv.org/abs/2306.03516)
   <br>
   
 - **Joint Optimization of Ranking and Calibration with Contextualized Hybrid Model**<br>
