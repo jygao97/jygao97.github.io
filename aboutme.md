@@ -3,14 +3,16 @@ layout: page
 title: About me
 ---
 ### Education
-* 2018-2021, M.S. Computer Science, Peking University, advised by [Prof. Yasha Wang](https://faculty.pku.edu.cn/wangyasha/en/index.htm).
-* 2014-2018, B.S. Computer Science, Peking University.
+* **2018 - 2021**<br>
+* M.S. Computer Science, Peking University, advised by [Prof. Yasha Wang](https://faculty.pku.edu.cn/wangyasha/en/index.htm).
+* **2021 - 2023**<br>
+* B.S. Computer Science, Peking University.
 
 ### Full-time Experience
 * **2023 - Now**<br>
   Bytedance, Douyin Search.
 * **2021 - 2023**<br>
-  Alibaba, Taobao Display Advertising.
+  Alibaba, Alimama Display Advertising.
 
 ### Internship
 * **2020/06 - 2020/09**<br>
