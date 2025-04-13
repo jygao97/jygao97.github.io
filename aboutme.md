@@ -5,7 +5,7 @@ title: About me
 ### Education
 * **2018 - 2021**<br>
 * M.S. Computer Science, Peking University, advised by [Prof. Yasha Wang](https://faculty.pku.edu.cn/wangyasha/en/index.htm).
-* **2021 - 2023**<br>
+* **2014 - 2018**<br>
 * B.S. Computer Science, Peking University.
 
 ### Full-time Experience
