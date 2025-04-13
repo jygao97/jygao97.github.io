@@ -10,7 +10,7 @@ title: About me
 
 ### Full-time Experience
 * **2023 - Now**<br>
-  Bytedance, Douyin Search.
+  ByteDance, Douyin Search.
 * **2021 - 2023**<br>
   Alibaba, Alimama Display Advertising.
 
