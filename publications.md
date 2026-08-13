@@ -3,6 +3,13 @@ layout: page
 title: Publications
 ---
 
+## 2026
+- **LEMUR: Large scale End-to-end MUltimodal Recommendation**<br>
+  Xintian Han\*, Honggang Chen\*, Quan Lin\*, **Jingyue Gao\***, Xiangyuan Ren\*, Lifei Zhu, Zhisheng Ye, Shikang Wu, XiongHang Xie, Xiaochu Gan, Bingzheng Wei, Peng Xu, Zhe Wang, Yuchao Zheng, Jingjian Lin, Di Wu, Junfeng Ge. <br>
+  (\* denotes equal contribution)<br>
+  **CIKM 2026**, [[PDF]](https://arxiv.org/pdf/2511.10962)
+  <br>
+
 ## 2023
 - **Rec4Ad: A Free Lunch to Mitigate Sample Selection Bias for Ads CTR Prediction in Taobao**<br>
   **Jingyue Gao**, Shuguang Han, Han Zhu, Siran Yang, Yuning Jiang, Jian Xu, Bo Zheng. <br>
