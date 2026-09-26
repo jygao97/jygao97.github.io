@@ -6,16 +6,7 @@ var main = {
   numImgs : null,
 
   init : function() {
-    // Shorten the navbar after scrolling a little bit down
-    $(window).scroll(function() {
-        if ($(".navbar").offset().top > 50) {
-            $(".navbar").addClass("top-nav-short");
-            $(".navbar-custom .avatar-container").fadeOut(500);
-        } else {
-            $(".navbar").removeClass("top-nav-short");
-            $(".navbar-custom .avatar-container").fadeIn(500);
-        }
-    });
+    main.initSectionNavigation();
 
     // On mobile, hide the avatar when expanding the navbar menu
     $('#main-navbar').on('show.bs.collapse', function () {
@@ -23,6 +14,20 @@ var main = {
     });
     $('#main-navbar').on('hidden.bs.collapse', function () {
       $(".navbar").removeClass("top-nav-expanded");
+    });
+
+    // Close the mobile menu after following an in-page section link.
+    // Wait for collapse before focusing so the fixed menu cannot cover the heading.
+    $('#main-navbar').on('click', 'a[href^="#"]', function() {
+      var target = document.getElementById(this.hash.slice(1));
+      var navbar = $('#main-navbar');
+      if (target && navbar.hasClass('in')) {
+        navbar.one('hidden.bs.collapse', function() {
+          target.focus({ preventScroll: true });
+          target.scrollIntoView();
+        });
+        navbar.collapse('hide');
+      }
     });
 
     // On mobile, when clicking on a multi-level navbar menu, show the child links
@@ -66,6 +71,67 @@ var main = {
 
     // show the big header image
     main.initImgs();
+  },
+
+  initSectionNavigation : function() {
+    var profile = document.querySelector('.profile-page');
+    if (!profile) {
+      return;
+    }
+
+    var sections = [];
+    var links = document.querySelectorAll('#main-navbar a[href^="#"]');
+    for (var i = 0; i < links.length; i++) {
+      var heading = document.getElementById(links[i].hash.slice(1));
+      if (heading) {
+        sections.push({ link: links[i], heading: heading });
+      }
+    }
+    if (!sections.length) {
+      return;
+    }
+
+    var pending = false;
+    var update = function() {
+      pending = false;
+      var current = sections[0];
+      sections.forEach(function(section) {
+        var offset = parseFloat(window.getComputedStyle(section.heading).scrollMarginTop) || 80;
+        if (section.heading.getBoundingClientRect().top <= offset + 2) {
+          current = section;
+        }
+      });
+
+      // The last section can be shorter than the viewport.
+      if (window.pageYOffset > 0 &&
+          window.pageYOffset + window.innerHeight >= document.documentElement.scrollHeight - 2) {
+        current = sections[sections.length - 1];
+      }
+      sections.forEach(function(section) {
+        if (section === current) {
+          section.link.setAttribute('aria-current', 'location');
+        } else {
+          section.link.removeAttribute('aria-current');
+        }
+      });
+    };
+    var schedule = function() {
+      if (!pending) {
+        pending = true;
+        window.requestAnimationFrame(update);
+      }
+    };
+
+    window.addEventListener('scroll', schedule, { passive: true });
+    window.addEventListener('resize', schedule);
+    window.addEventListener('hashchange', schedule);
+    window.addEventListener('pageshow', schedule);
+    window.addEventListener('load', schedule);
+    if (window.ResizeObserver) {
+      // Opening author lists or internships can move the section boundaries.
+      new ResizeObserver(schedule).observe(profile);
+    }
+    update();
   },
 
   initImgs : function() {

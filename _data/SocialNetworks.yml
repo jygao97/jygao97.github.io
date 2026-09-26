@@ -16,6 +16,11 @@ github:
   baseURL: "https://github.com/"
   icon: "fa-github"
 
+google-scholar:
+  name: "Google Scholar"
+  baseURL: ""
+  icon: "fa-graduation-cap"
+
 twitter:
   name: "Twitter"
   baseURL: "https://twitter.com/"
@@ -75,11 +80,6 @@ telephone:
   name: "Phone"
   baseURL: "tel:"
   icon: "fa-phone"
-
-rss:
-  name: "RSS"
-  baseURL: "{{ '/feed.xml' | prepend: site.baseurl }}"
-  icon: "fa-rss"
 
 steam:
   name: "Steam"

@@ -1,0 +1,17 @@
+---
+layout: null
+---
+{% assign destination = page.redirect_to | prepend: site.baseurl %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="canonical" href="{{ destination | prepend: site.url }}">
+    <meta http-equiv="refresh" content="0; url={{ destination }}">
+  </head>
+  <body>
+    <p>This section has moved to the <a href="{{ destination }}">{{ page.title }}</a> section of the homepage.</p>
+  </body>
+</html>

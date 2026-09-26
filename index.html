@@ -1,72 +1,189 @@
 ---
-layout: page
+layout: base
 title: Jingyue Gao
 subtitle: 高敬月
+meta-description: "I lead the R&D team of retrieval and query understanding (召回&Query理解) for Douyin Search (抖音搜索) at ByteDance. My current focus is on applying large language models (LLMs) to contextualized query understanding, retrieval, and ranking in large-scale industrial systems."
 use-site-title: true
 ---
 
-<div class="posts-list">
-  {% for post in paginator.posts %}
-  <article class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
+<main class="profile-page" id="main-content">
+  <header class="profile-intro">
+    <img class="profile-photo" src="{{ site.baseurl }}/img/self.jpeg" alt="Jingyue Gao" width="255" height="256">
+    <div class="profile-identity">
+      <h1>{{ page.title }} <span class="profile-name-cn" lang="zh">{{ page.subtitle }}</span></h1>
+      <p class="profile-role">Douyin Search <span aria-hidden="true">/</span> ByteDance</p>
+    </div>
+    <div class="profile-bio" lang="en">
+      <p>I lead the R&amp;D team of <strong>retrieval and query understanding</strong> (召回&amp;Query理解) for Douyin Search (抖音搜索) at ByteDance.</p>
+      <p>My current focus is on applying large language models (LLMs) to contextualized query understanding, retrieval, and ranking in large-scale industrial systems.</p>
+    </div>
+    <div class="profile-contact-block">
+      <ul class="profile-contact" aria-label="Contact and profiles">
+        <li><a href="mailto:{{ site.social-network-links.email }}">Email</a></li>
+        <li><a href="https://github.com/{{ site.social-network-links.github }}">GitHub</a></li>
+        <li><a href="{{ site.social-network-links.google-scholar | escape }}">Google Scholar</a></li>
+      </ul>
+    </div>
+  </header>
 
-	  {% if post.subtitle %}
-	  <h3 class="post-subtitle">
-	    {{ post.subtitle }}
-	  </h3>
-	  {% endif %}
-    </a>
-
-    <p class="post-meta">
-      Posted on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
-
-    <div class="post-entry-container">
-      {% if post.image %}
-      <div class="post-image">
-        <a href="{{ post.url | prepend: site.baseurl }}">
-          <img src="{{ post.image }}">
-        </a>
+  <section class="profile-section" aria-labelledby="aboutme">
+    <div class="background-grid">
+      <div>
+        <h2 id="aboutme" class="section-title background-heading" tabindex="-1">Experience</h2>
+        <ul class="experience-list">
+          <li>
+            <span class="entry-date">2023 - Present</span>
+            <div><h3>ByteDance</h3><p>Douyin Search</p></div>
+          </li>
+          <li>
+            <span class="entry-date">2021 - 2023</span>
+            <div><h3>Alibaba</h3><p>Alimama Display Advertising</p></div>
+          </li>
+        </ul>
       </div>
-      {% endif %}
-      <div class="post-entry">
-        {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
-        {% assign excerpt_word_count = post.excerpt | number_of_words %}
-        {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
-        {% endif %}
+      <div>
+        <h2 id="education" class="section-title background-heading" tabindex="-1">Education</h2>
+        <ul class="experience-list">
+          <li>
+            <span class="entry-date">2018 - 2021</span>
+            <div><h3>Peking University</h3><p>M.S. in Computer Science<br>Advised by <a href="https://faculty.pku.edu.cn/wangyasha/en/index.htm">Prof. Yasha Wang</a></p></div>
+          </li>
+          <li>
+            <span class="entry-date">2014 - 2018</span>
+            <div><h3>Peking University</h3><p>B.S. in Computer Science</p></div>
+          </li>
+        </ul>
       </div>
     </div>
+    <details class="earlier-experience">
+      <summary>Earlier internships <span class="detail-count">(4)</span></summary>
+      <ul class="experience-list internship-list">
+        <li>
+          <span class="entry-date">Jun - Sep 2020</span>
+          <div><h3>Alibaba</h3><p>Machine learning engineering intern; unbiased ranking models.</p></div>
+        </li>
+        <li>
+          <span class="entry-date">Jun - Sep 2019</span>
+          <div><h3>Google, Mountain View</h3><p>Software engineering intern; intelligence layer of <a href="https://en.wikipedia.org/wiki/Google_Fuchsia">Fuchsia</a>.</p></div>
+        </li>
+        <li>
+          <span class="entry-date">Sep 2017 - Jul 2018</span>
+          <div><h3>MSRA</h3><p>Research intern; explainable recommendation models.</p></div>
+        </li>
+        <li>
+          <span class="entry-date">Apr - Jun 2017</span>
+          <div><h3>DiDi</h3><p>Software engineering intern; large-scale feature management for machine learning.</p></div>
+        </li>
+      </ul>
+    </details>
+  </section>
 
-    {% if post.tags.size > 0 %}
-    <div class="blog-tags">
-      Tags:
-      {% if site.link-tags %}
-      {% for tag in post.tags %}
-      <a href="{{ site.baseurl }}/tags#{{- tag -}}">{{- tag -}}</a>
-      {% endfor %}
-      {% else %}
-        {{ post.tags | join: ", " }}
-      {% endif %}
-    </div>
-    {% endif %}
-
-   </article>
-  {% endfor %}
-</div>
-
-{% if paginator.total_pages > 1 %}
-<ul class="pager main-pager">
-  {% if paginator.previous_page %}
-  <li class="previous">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-  </li>
-  {% endif %}
-  {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-  </li>
-  {% endif %}
-</ul>
-{% endif %}
+  <section class="profile-section" aria-labelledby="publications">
+    <h2 id="publications" class="section-title" tabindex="-1">Publications</h2>
+    <ol class="publication-list">
+      <li class="publication" aria-labelledby="paper-lemur-large-scale-end-to-end-multimodal-recommendation">
+        <h3 class="publication-title" id="paper-lemur-large-scale-end-to-end-multimodal-recommendation">LEMUR: Large scale End-to-end MUltimodal Recommendation</h3>
+        <div class="publication-meta">
+          <span class="publication-venue">CIKM 2026</span>
+          <a href="https://arxiv.org/pdf/2511.10962" aria-label="Paper: LEMUR: Large scale End-to-end MUltimodal Recommendation">Paper</a>
+        </div>
+        <details class="publication-authors author-details">
+          <summary>Full author list <span class="author-preview">(including <strong>Jingyue Gao*</strong>)</span></summary>
+          <p>Xintian Han*, Honggang Chen*, Quan Lin*, <strong>Jingyue Gao</strong>*, Xiangyuan Ren*, Lifei Zhu, Zhisheng Ye, Shikang Wu, XiongHang Xie, Xiaochu Gan, Bingzheng Wei, Peng Xu, Zhe Wang, Yuchao Zheng, Jingjian Lin, Di Wu, Junfeng Ge.</p>
+          <p class="contribution-note">* Equal contribution.</p>
+        </details>
+      </li>
+      <li class="publication" aria-labelledby="paper-rec4ad-a-free-lunch-to-mitigate-sample-selection-bias-for-ads-ctr-prediction-in-taobao">
+        <h3 class="publication-title" id="paper-rec4ad-a-free-lunch-to-mitigate-sample-selection-bias-for-ads-ctr-prediction-in-taobao">Rec4Ad: A Free Lunch to Mitigate Sample Selection Bias for Ads CTR Prediction in Taobao</h3>
+        <div class="publication-meta">
+          <span class="publication-venue">CIKM 2023</span>
+          <a href="https://arxiv.org/abs/2306.03527" aria-label="Paper: Rec4Ad: A Free Lunch to Mitigate Sample Selection Bias for Ads CTR Prediction in Taobao">Paper</a>
+        </div>
+        <p class="publication-authors"><strong>Jingyue Gao</strong>, Shuguang Han, Han Zhu, Siran Yang, Yuning Jiang, Jian Xu, Bo Zheng.</p>
+      </li>
+      <li class="publication" aria-labelledby="paper-copr-consistency-oriented-pre-ranking-for-online-advertising">
+        <h3 class="publication-title" id="paper-copr-consistency-oriented-pre-ranking-for-online-advertising">COPR: Consistency-Oriented Pre-Ranking for Online Advertising</h3>
+        <div class="publication-meta">
+          <span class="publication-venue">CIKM 2023</span>
+          <a href="https://arxiv.org/abs/2306.03516" aria-label="Paper: COPR: Consistency-Oriented Pre-Ranking for Online Advertising">Paper</a>
+        </div>
+        <p class="publication-authors"><strong>Jingyue Gao</strong>*, Zhishan Zhao*, Yu Zhang, Shuguang Han, Siyuan Lou, Xiang-Rong Sheng, Zhe Wang, Han Zhu, Yuning Jiang, Jian Xu, Bo Zheng.</p>
+        <p class="contribution-note">* Equal contribution.</p>
+      </li>
+      <li class="publication" aria-labelledby="paper-joint-optimization-of-ranking-and-calibration-with-contextualized-hybrid-model">
+        <h3 class="publication-title" id="paper-joint-optimization-of-ranking-and-calibration-with-contextualized-hybrid-model">Joint Optimization of Ranking and Calibration with Contextualized Hybrid Model</h3>
+        <div class="publication-meta">
+          <span class="publication-venue">SIGKDD 2023</span>
+          <a href="{{ site.baseurl }}/papers/JRC_KDD_CameraReady.pdf" aria-label="Paper: Joint Optimization of Ranking and Calibration with Contextualized Hybrid Model">Paper</a>
+        </div>
+        <p class="publication-authors">Xiang-Rong Sheng, <strong>Jingyue Gao</strong>, Yueyao Cheng, Siran Yang, Shuguang Han, Hongbo Deng, Yuning Jiang, Jian Xu, Bo Zheng.</p>
+      </li>
+      <li class="publication" aria-labelledby="paper-learning-groupwise-explanations-for-black-box-models">
+        <h3 class="publication-title" id="paper-learning-groupwise-explanations-for-black-box-models">Learning Groupwise Explanations for Black-Box Models</h3>
+        <div class="publication-meta">
+          <span class="publication-venue">IJCAI 2021</span>
+        </div>
+        <p class="publication-authors"><strong>Jingyue Gao</strong>, Xiting Wang, Yasha Wang, Yulan Yan, Xing Xie.</p>
+      </li>
+      <li class="publication" aria-labelledby="paper-u-bert-pre-training-user-representations-for-improved-recommendation">
+        <h3 class="publication-title" id="paper-u-bert-pre-training-user-representations-for-improved-recommendation">U-BERT: Pre-Training User Representations for Improved Recommendation</h3>
+        <div class="publication-meta">
+          <span class="publication-venue">AAAI 2021</span>
+        </div>
+        <p class="publication-authors">Zhaopeng Qiu, Xian Wu, <strong>Jingyue Gao</strong>, Wei Fan.</p>
+      </li>
+      <li class="publication" aria-labelledby="paper-set-sequence-graph-a-multi-view-approach-towards-exploiting-reviews-for-recommendation">
+        <h3 class="publication-title" id="paper-set-sequence-graph-a-multi-view-approach-towards-exploiting-reviews-for-recommendation">Set-Sequence-Graph: A Multi-View Approach Towards Exploiting Reviews for Recommendation</h3>
+        <div class="publication-meta">
+          <span class="publication-venue">CIKM 2020</span>
+          <a href="https://dl.acm.org/doi/10.1145/3340531.3411939" aria-label="Paper: Set-Sequence-Graph: A Multi-View Approach Towards Exploiting Reviews for Recommendation">Paper</a>
+          <a href="https://github.com/jygao97/SSG" aria-label="Code: Set-Sequence-Graph: A Multi-View Approach Towards Exploiting Reviews for Recommendation">Code</a>
+        </div>
+        <p class="publication-authors"><strong>Jingyue Gao</strong>, Yang	Lin, Yasha Wang, Xiting	Wang, Zhao	Yang, Yuanduo	He, Xu	Chu.</p>
+      </li>
+      <li class="publication" aria-labelledby="paper-explainable-recommendation-through-attentive-multi-view-learning">
+        <h3 class="publication-title" id="paper-explainable-recommendation-through-attentive-multi-view-learning">Explainable Recommendation Through Attentive Multi-View Learning</h3>
+        <div class="publication-meta">
+          <span class="publication-venue">AAAI 2019</span>
+          <a href="https://www.microsoft.com/en-us/research/uploads/prod/2018/10/exrec-aaai-camera-ready.pdf" aria-label="Paper: Explainable Recommendation Through Attentive Multi-View Learning">Paper</a>
+        </div>
+        <p class="publication-authors"><strong>Jingyue Gao</strong>, Xiting Wang, Yasha Wang, Xing Xie.</p>
+      </li>
+      <li class="publication" aria-labelledby="paper-star-spatio-temporal-taxonomy-aware-tag-recommendation-for-citizen-complaints">
+        <h3 class="publication-title" id="paper-star-spatio-temporal-taxonomy-aware-tag-recommendation-for-citizen-complaints">STAR: Spatio-Temporal Taxonomy-Aware Tag Recommendation for Citizen Complaints</h3>
+        <div class="publication-meta">
+          <span class="publication-venue">CIKM 2019</span>
+          <a href="{{ site.baseurl }}/papers/STAR_CIKM19_CameraReady.pdf" aria-label="Paper: STAR: Spatio-Temporal Taxonomy-Aware Tag Recommendation for Citizen Complaints">Paper</a>
+          <a href="https://github.com/jygao97/STAR" aria-label="Code: STAR: Spatio-Temporal Taxonomy-Aware Tag Recommendation for Citizen Complaints">Code</a>
+        </div>
+        <p class="publication-authors"><strong>Jingyue Gao</strong>*, Yuanduo He*, Yasha Wang, Xiting Wang, Jiangtao Wang, Guangju Peng, Xu Chu.</p>
+        <p class="contribution-note">* Equal contribution.</p>
+      </li>
+      <li class="publication" aria-labelledby="paper-camp-co-attention-memory-networks-for-diagnosis-prediction-in-healthcare">
+        <h3 class="publication-title" id="paper-camp-co-attention-memory-networks-for-diagnosis-prediction-in-healthcare">CAMP: Co-Attention Memory Networks for Diagnosis Prediction in Healthcare</h3>
+        <div class="publication-meta">
+          <span class="publication-venue">ICDM 2019</span>
+          <a href="{{ site.baseurl }}/papers/CAMP_ICDM19__short_version.pdf" aria-label="Paper: CAMP: Co-Attention Memory Networks for Diagnosis Prediction in Healthcare">Paper</a>
+          <a href="https://github.com/jygao97/CAMP" aria-label="Code: CAMP: Co-Attention Memory Networks for Diagnosis Prediction in Healthcare">Code</a>
+        </div>
+        <p class="publication-authors"><strong>Jingyue Gao</strong>, Xiting Wang, Yasha Wang, Zhao Yang, Junyi Gao, Jiangtao Wang, Wen Tang, Xing Xie.</p>
+      </li>
+      <li class="publication" aria-labelledby="paper-mulda-a-multi-task-semi-supervised-learning-framework-for-drug-drug-interaction-prediction">
+        <h3 class="publication-title" id="paper-mulda-a-multi-task-semi-supervised-learning-framework-for-drug-drug-interaction-prediction">MuLDA: A Multi-Task Semi-Supervised Learning Framework for Drug-Drug Interaction Prediction</h3>
+        <div class="publication-meta">
+          <span class="publication-venue">IJCAI 2019</span>
+          <a href="https://www.ijcai.org/proceedings/2019/0628.pdf" aria-label="Paper: MuLDA: A Multi-Task Semi-Supervised Learning Framework for Drug-Drug Interaction Prediction">Paper</a>
+        </div>
+        <p class="publication-authors">Xu Chu, Yang Lin, Yasha Wang, Leye Wang, Jiangtao Wang, <strong>Jingyue Gao</strong>.</p>
+      </li>
+      <li class="publication" aria-labelledby="paper-caped-context-aware-powerlet-based-energy-disaggregation">
+        <h3 class="publication-title" id="paper-caped-context-aware-powerlet-based-energy-disaggregation">CAPED: Context-Aware Powerlet-Based Energy Disaggregation</h3>
+        <div class="publication-meta">
+          <span class="publication-venue">PAKDD 2018</span>
+          <a href="https://link.springer.com/chapter/10.1007/978-3-319-93034-3_19" aria-label="Paper: CAPED: Context-Aware Powerlet-Based Energy Disaggregation">Paper</a>
+        </div>
+        <p class="publication-authors"><strong>Jingyue Gao</strong>, Yasha Wang, Xu Chu, Yuanduo He, Ziqing Mao.</p>
+      </li>
+    </ol>
+  </section>
+</main>
